@@ -33,7 +33,7 @@ pipeline {
                 echo 'Running build automation'
                 echo 'Running build automation'
                 sh './gradlew build --no-daemon'
-                archiveArtifacts artifacts: 'dist/trainSchedule.zip
+                
             }
         }
         stage('CanaryDeploy') {
@@ -44,7 +44,7 @@ pipeline {
                 echo 'CanaryDeploy Successfull'
                 echo 'Running build automation'
                 sh './gradlew build --no-daemon'
-                archiveArtifacts artifacts: 'dist/trainSchedule.zip
+                
             }
         }
         stage('DeployToProduction') {
@@ -56,7 +56,7 @@ pipeline {
                 echo 'DeployToProduction Successfull'
                 echo 'Running build automation'
                 sh './gradlew build --no-daemon'
-                archiveArtifacts artifacts: 'dist/trainSchedule.zip
+                
             }
          
         }
