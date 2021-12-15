@@ -30,10 +30,7 @@ pipeline {
                 branch 'master'
             }
             steps {
-                script {
-                    sh 'echo Hello, World!'
-                    }
-                }
+                echo 'Running build automation'
             }
         }
         stage('CanaryDeploy') {
