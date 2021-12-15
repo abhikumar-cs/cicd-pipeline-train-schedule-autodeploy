@@ -56,6 +56,16 @@ pipeline {
                 echo 'DeployToProduction Successfull'
                 echo 'Running build automation'
                 sh './gradlew build --no-daemon'
+                 echo 'Running build automation'
+                sh './gradlew build --no-daemon'
+                 echo 'Running build automation'
+                sh './gradlew build --no-daemon'
+                 echo 'Running build automation'
+                sh './gradlew build --no-daemon'
+                 echo 'Running build automation'
+                sh './gradlew build --no-daemon'
+                 echo 'Running build automation'
+                sh './gradlew build --no-daemon'
                 
             }
          
