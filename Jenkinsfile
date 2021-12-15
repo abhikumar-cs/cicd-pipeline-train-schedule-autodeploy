@@ -31,9 +31,7 @@ pipeline {
             }
             steps {
                 script {
-                    withDockerRegistry([credentialsId: 'bhavukm', url: 'https://index.docker.io/v1/']) {
-                        app.push("${env.BUILD_NUMBER}")
-                        app.push("latest")
+                    sh 'echo Hello, World!'
                     }
                 }
             }
