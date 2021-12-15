@@ -33,6 +33,13 @@ pipeline {
                 echo 'Running build automation'
                 echo 'Running build automation'
                 sh './gradlew build --no-daemon'
+                echo 'Running build automation'
+                sh './gradlew build --no-daemon'
+                echo 'Running build automation'
+                sh './gradlew build --no-daemon'
+                echo 'Running build automation'
+                sh './gradlew build --no-daemon'
+                
                 
             }
         }
@@ -42,6 +49,14 @@ pipeline {
             }
             steps {
                 echo 'CanaryDeploy Successfull'
+                echo 'Running build automation'
+                sh './gradlew build --no-daemon'
+                echo 'Running build automation'
+                sh './gradlew build --no-daemon'
+                echo 'Running build automation'
+                sh './gradlew build --no-daemon'
+                echo 'Running build automation'
+                sh './gradlew build --no-daemon'
                 echo 'Running build automation'
                 sh './gradlew build --no-daemon'
                 
